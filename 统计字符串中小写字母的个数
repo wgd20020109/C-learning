@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main()
+ {
+     char str[81];
+     int n=0,i,j;
+     gets(str);
+     j=0;
+     while(str[j]!='\0')
+        j++;
+     for(i=0;i<j;i++)
+     {
+         if(str[i]>='a'&&str[i]<='z')
+            n++;
+     }
+     puts(str);
+     printf("这一字符串有%d个字符，",j);
+     printf("其中共有%d个小写字母\n",n);
+     return 0;
+
+
+ }
