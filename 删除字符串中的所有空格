@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main()
+{
+    char a[81],b[81];
+    int i=0,j,k=0;
+    gets(a);
+    while(a[i]!='\0') i++;
+    i--;
+    while(a[i]==' ') i--;
+    i++;
+    a[i]='\0';
+    for(j=0;j<=i;j++)
+    {
+        if(a[j]!=' ')
+            b[k++]=a[j];
+    }
+    puts(b);
+    return 0;
+}
