@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    char str[81],t;
+    int i,j,k;
+    gets(str);
+    i=0;
+    while(str[i]!='\0')
+        i++;
+    for(j=0,k=i-1;k>=j;j++,k--)
+    {
+        t=str[j];
+        str[j]=str[k];
+        str[k]=t;
+    }
+    for(j=0;j<=i;j++)
+        putchar(str[j]);
+    return 0;
+
+}
